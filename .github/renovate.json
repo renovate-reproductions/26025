@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate config for minimal reproduction of duplicate Yarn deps",
+  "extends": ["config:base"],
+  "dependencyDashboardApproval": true,
+  "regexManagers": [
+    {
+      "fileMatch": ["^\\.mega-linter\\.yaml$"],
+      "matchStrings": ["(?<depName>yarn)-(?<currentValue>(\\d+\\.){2}\\d+)"],
+      "packageNameTemplate": "@yarnpkg/cli",
+      "datasourceTemplate": "npm",
+      "depTypeTemplate": "packageManager"
+    }
+  ]
+}

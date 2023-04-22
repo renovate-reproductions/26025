@@ -1,0 +1,13 @@
+{
+  "name": "minimal-reproduction",
+  "version": "0.1.0",
+  "description": "Minimal reproduction for duplicate Yarn deps in Renovate PR descriptions",
+  "author": "Kurt von Laven <kurt.von.laven@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "20.10.0",
+    "yarn": "4.0.1"
+  },
+  "packageManager": "yarn@4.0.1"
+}
